@@ -45,7 +45,7 @@ load("target_data/eq5d.RData")
 ####################################################################################################################
 ####################################################################################################################
  #THE FOLLOWING LINE IS TO SET A CRITERIOR IF NEED TO SEPARATE  INDIVIDUALS INTO A GROUP OF RECIPIENTS "rdf_recip" AND NON-RECIPIENTS "rdf_norecip" USING SOME CRITERIOR  (IN THIS EXAMPLE THE CRITERIOR TO DEFINE THE RECIPIENT GROUP IS SDQ CONDUCT PROBLEM SCORE AT AGE 5 (MCS WAVE 3) BEING 4 OR ABOVE)
-df<-mutate(initialdata, recip=ifelse(sdq_cond4>=4, 1, 0))
+df<-mutate(initialdata, recip=ifelse(sdq_cond4>=1, 1, 0))
 ####################################################################################################################
 ####################################################################################################################
 #SETTING SEED
